@@ -14,12 +14,6 @@ export const Panel = ({
   selectedBird,
   allData,
 }) => {
-  // const [selectedBird, setSelectedBird] = useState(Object.keys(data)[0]);
-
-  // useEffect(() => {
-  //   setSelectedBird(Object.keys(data)[0]);
-  // }, [data]);
-
   if (!Object.keys(data).length || !selectedBird) return null;
 
   return (

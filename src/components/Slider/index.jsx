@@ -12,7 +12,6 @@ function App() {
   const [minMaxDate, setMinMaxDate] = useState(null);
   const [selectedDate, setSelectedDate] = useState(null);
   const [dataSlice, setDataSlice] = useState({});
-  const [birdsStats, setBirdsStats] = useState({});
 
   const colorScale = useMemo(
     () =>
@@ -99,7 +98,6 @@ function App() {
 
       setMinMaxDate([dateMin, dateMax]);
       setSelectedDate(dateMax);
-      setBirdsStats(birdsStats);
     });
   }, []);
 
@@ -112,24 +110,6 @@ function App() {
     });
     setDataSlice(newData);
   }, [parsedData, selectedDate]);
-
-  // useEffect(() => {
-  //   if (!minMaxDate) return;
-  //   let timerId = setInterval(() => {
-  //     if (!selectedDate) return;
-  //     // console.log(selectedDate);
-  //     setSelectedDate(selectedDate + 10000000);
-  //   }, 1);
-
-  //   // if (selectedDate >= minMaxDate[1]) {
-  //   //   clearInterval(timerId);
-  //   // }
-
-  //   return () => {
-  //     clearTimeout(timerId);
-  //   };
-  // }, [selectedDate, minMaxDate]);
-  console.log(birdsStats);
 
   return (
     <div className="App">

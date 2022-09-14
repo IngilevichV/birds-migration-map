@@ -6,7 +6,7 @@ import { rgb } from "d3";
 
 // Set your mapbox access token here
 const MAPBOX_ACCESS_TOKEN =
-  "pk.eyJ1IjoiaW5naWxldmljaHYiLCJhIjoiY2pvazBjOHpkMDJvZTNwbnlpcTYxMzEzYyJ9.ILNeHz7ZpIs23Ta3vRcMyQ";
+  "pk.eyJ1IjoiaW5naWxldmljaHYiLCJhIjoiY2w2MXVpdTl0MWx6cjNmb2FiOTk0OHYwMyJ9.LNQz1dMCp1fS5H1-GKBHPw";
 
 // Viewport settings
 const INITIAL_VIEW_STATE = {

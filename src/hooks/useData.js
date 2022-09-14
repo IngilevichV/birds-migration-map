@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import data from "./data/bird_migration.csv";
+import data from "../data/bird_migration.csv";
 import { useEffect, useState, useCallback } from "react";
 
 export const useData = () => {
@@ -86,9 +86,7 @@ export const useData = () => {
       );
 
       setMinMaxSpeed([speedMin, speedMax]);
-
       setMinMaxAltitude([altitudeMin, altitudeMax]);
-
       setParsedData(birdsData);
       setDataSlice(Object.values(birdsData)[0]);
       setBirdsStats(birdsDataTemp);

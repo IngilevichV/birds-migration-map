@@ -93,17 +93,6 @@ export const Card = ({
               {new Date(maxDate).toLocaleTimeString()}
             </p>
           </div>
-          {/* <div
-          onClick={() => {
-            if (!animation) {
-              setDate(minDate);
-              handleDateChange(minDate);
-            }
-            setAnimation(!animation);
-          }}
-        >
-          pl
-        </div> */}
         </div>
 
         <div
